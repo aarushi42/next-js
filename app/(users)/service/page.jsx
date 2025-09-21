@@ -1,6 +1,10 @@
+import CardList from "../../../component/card"
 const Service = ()=>{
   return (
-    <h1>Service page</h1>
+    <div>
+      <h1>Service page</h1>  
+      <CardList/>   
+    </div>   
   );
 }
 
