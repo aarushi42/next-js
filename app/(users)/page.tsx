@@ -1,4 +1,11 @@
 import Image from "next/image"
+import { MdLibraryMusic } from "react-icons/md";
+import { BsFileEarmarkMusicFill } from "react-icons/bs";
+import { PiMicrophoneStageFill } from "react-icons/pi";
+import { GiMusicalScore } from "react-icons/gi";
+import { FaYoutube } from "react-icons/fa6";
+import { MdAudiotrack } from "react-icons/md";
+import Card from "../../component/servicesCards.jsx"
 const Home = () => {
    return (
       <div>
@@ -39,11 +46,37 @@ const Home = () => {
          </div>
          <div className="my-15">
             <h1 className="text-center text-5xl font-bold text-blue-700 ">Our Services</h1>
-            <div> main card container
-               <div> card
-                  <div>icon</div>
-                  <div>guinb</div>
-               </div>
+            <div className="flex flex-wrap gap-10 mt-10 mx-18">   
+               <Card 
+                  icon = {MdLibraryMusic}
+                  title ="Original Songs"
+                  description="Custom-written and composed songs tailored to your vision, style, and message, ensuring a unique and personal musical creation."
+               />
+               <Card 
+                  icon = {BsFileEarmarkMusicFill}
+                  title ="Cover Songs"
+                  description="High-quality renditions of popular tracks, reimagined with fresh vocals, instrumentation, or genre twists while staying true to the original essence."
+               />
+               <Card 
+                  icon = {PiMicrophoneStageFill}
+                  title ="Rap"
+                  description="Custom rap verses or full tracks with sharp lyrics, dynamic flows, and hard-hitting beats, whether for personal projects, commercials, or collaborations."
+               />
+               <Card 
+                  icon = {GiMusicalScore}
+                  title ="BGM for Movies & Short Films"
+                  description="Professionally scored background music designed to intensify suspense, fear, and atmosphere in films, enhancing storytelling through eerie soundscapes and gripping compositions."
+               />
+               <Card 
+                  icon = {FaYoutube}
+                  title ="Copyright-Free Tracks for YouTube"
+                  description="High-quality, royalty-free music perfect for YouTubers, ensuring no copyright strikes while adding professional-grade sound to videos."
+               />
+               <Card 
+                  icon = {MdAudiotrack}
+                  title ="EDM Beats for Vlogs"
+                  description="Energetic, upbeat electronic dance music tailored for vlogs, travel videos, and lifestyle content, keeping audiences engaged with vibrant, modern soundscapes."
+               />
             </div>
          </div>
       </div>
